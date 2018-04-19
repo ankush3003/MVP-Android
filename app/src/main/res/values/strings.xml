@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">MVP Android</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="chk_rememberme">Remember Me</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="username_key_sharedprefs">uname</string>
+    <string name="password_key_sharedprefs">pwd</string>
+
+    <!--Master Activity -->
+    <string name="master_activity_title">CHOOSE A CATEGORY</string>
+    <string name="subchild_count_postfix">items</string>
+
+    <!--Detail Activity -->
+    <string name="detail_activity_title">Detail Page</string>
+
+    <!--menu item Activity -->
+    <string name="menuitem_feedback">Provide Feedback</string>
+    <string name="menuitem_about">About</string>
+
+    <string name="about_ativity_text">Explore App \nVersion: alpha \n\nThis application is for reference purpose only.\n\nThis app collates useful data and provides it to the user quickly. It aims to save your time and allow you to suggest content to be included. Please feel free to give your feedback.  \n\nCopyright - 2018</string>
+
+</resources>
