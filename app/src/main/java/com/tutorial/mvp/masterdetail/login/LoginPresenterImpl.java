@@ -4,7 +4,7 @@ import com.tutorial.mvp.masterdetail.R;
 import com.tutorial.mvp.masterdetail.constants.ResultCode;
 
 /**
- * Created by ankushgulati on 07/04/18.
+ * Created by ankush3003 on 07/04/18.
  */
 
 public class LoginPresenterImpl implements ILoginPresenter, ILoginInteractor.ILoginFinishedListener {

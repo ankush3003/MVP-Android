@@ -1,7 +1,7 @@
 package com.tutorial.mvp.masterdetail.constants;
 
 /**
- * Created by ankushgulati on 08/04/18.
+ * Created by ankush3003 on 08/04/18.
  */
 
 public class ResultCode {

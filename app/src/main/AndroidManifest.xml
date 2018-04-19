@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.tutorial.mvp.masterdetail.MasterActivity" />
+        <activity android:name="com.tutorial.mvp.masterdetail.master.MasterActivity" />
 
     </application>
 </manifest>

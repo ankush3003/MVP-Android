@@ -1,7 +1,7 @@
 package com.tutorial.mvp.masterdetail.login;
 
 /**
- * Created by ankushgulati on 07/04/18.
+ * Created by ankush3003 on 07/04/18.
  */
 
 public interface ILoginView {

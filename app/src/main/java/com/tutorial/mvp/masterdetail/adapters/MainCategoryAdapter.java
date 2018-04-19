@@ -17,7 +17,7 @@ import com.tutorial.mvp.masterdetail.models.CardData;
 import java.util.List;
 
 /**
- * Created by rsgulati on 1/6/2018.
+ * Created by ankush3003 on 1/6/2018.
  */
 public class MainCategoryAdapter extends RecyclerView.Adapter<MainCategoryAdapter.MyViewHolder> {
 

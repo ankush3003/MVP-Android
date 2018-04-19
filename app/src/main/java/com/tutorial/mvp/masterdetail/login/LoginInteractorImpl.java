@@ -8,7 +8,7 @@ import com.tutorial.mvp.masterdetail.constants.AppConstants;
 import com.tutorial.mvp.masterdetail.constants.ResultCode;
 
 /**
- * Created by ankushgulati on 07/04/18.
+ * Created by ankush3003 on 07/04/18.
  */
 
 public class LoginInteractorImpl implements ILoginInteractor {

@@ -2,13 +2,12 @@ package com.tutorial.mvp.masterdetail.login;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
-import com.tutorial.mvp.masterdetail.MasterActivity;
+import com.tutorial.mvp.masterdetail.master.MasterActivity;
 import com.tutorial.mvp.masterdetail.R;
 
 import br.com.simplepass.loading_button_lib.customViews.CircularProgressButton;

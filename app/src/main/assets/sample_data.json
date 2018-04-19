@@ -1,0 +1,45 @@
+{
+  "main": [
+    {
+      "card_title": "Android Things",
+      "hyperlink": "https://www.youtube.com/watch?v=zpR_jQXc1fs",
+      "card_description": "Youtube video"
+    },{
+      "card_title": "Uses for Kotlin",
+      "hyperlink": "https://www.youtube.com/watch?v=YbF8Q8LxAJs",
+      "card_description": "Youtube video"
+    },{
+      "card_title": "Android Threading",
+      "hyperlink": "https://www.youtube.com/watch?v=0Z5MZ0jL2BM",
+      "card_description": "Youtube video"
+    },{
+      "card_title": "Memory and Threading",
+      "hyperlink": "https://www.youtube.com/watch?v=tBHPmQQNiS8",
+      "card_description": "Youtube video"
+    },{
+      "card_title": "Android ViewModel",
+      "hyperlink": "https://www.youtube.com/watch?v=c9-057jC1ZA",
+      "card_description": "Youtube video"
+    },{
+      "card_title": "Android Performance - App launch time",
+      "hyperlink": "https://www.youtube.com/watch?v=Vw1G1s73DsY",
+      "card_description": "Youtube video"
+    },{
+      "card_title": "Android Testing Patterns #1",
+      "hyperlink": "https://www.youtube.com/watch?v=W8LJjfkTKik",
+      "card_description": "Youtube video"
+    },{
+      "card_title": "Android Testing Patterns #2",
+      "hyperlink": "https://www.youtube.com/watch?v=kL3MCQV2M2s",
+      "card_description": "Youtube video"
+    },{
+      "card_title": "Play Billing Library",
+      "hyperlink": "https://www.youtube.com/watch?v=y78ugwN4Obg",
+      "card_description": "Youtube video"
+    },{
+      "card_title": "Oreo Background Execution limits",
+      "hyperlink": "https://www.youtube.com/watch?v=Pumf_4yjTMc&t=244s",
+      "card_description": "Youtube video"
+    }
+  ]
+}
