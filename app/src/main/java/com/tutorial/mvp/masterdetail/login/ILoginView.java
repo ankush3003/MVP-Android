@@ -7,7 +7,7 @@ package com.tutorial.mvp.masterdetail.login;
 public interface ILoginView {
 
     void showLoading();
-    void hideLoading();
+    void hideLoading(boolean isSuccess);
     void setPasswordError(int stringID);
     void setEmailError(int stringID);
     void loginSuccess();

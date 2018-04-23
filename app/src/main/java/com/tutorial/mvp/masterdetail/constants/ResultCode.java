@@ -14,4 +14,8 @@ public class ResultCode {
     public static final int NETWORK_UNAVAILABLE = 1005;
     public static final int UNKNOWN_ERROR = 1006;
     public static final int VALID_CREDENTIALS = 1007;
+
+    // Loading finished codes
+    public static final int END_LOADING_WITH_SUCCESS = 1008;
+    public static final int END_LOADING_WITH_FAILURE = 1009;
 }

@@ -2,7 +2,10 @@ package com.tutorial.mvp.masterdetail.login;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.os.Handler;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
@@ -81,9 +84,15 @@ public class LoginActivity extends AppCompatActivity implements ILoginView{
     }
 
     @Override
-    public void hideLoading() {
-        //Choose the color and the image that will be show
-        signInBtn.revertAnimation();
+    public void hideLoading(boolean isSuccess) {
+        if(isSuccess) {
+            // Show done animation
+            signInBtn.doneLoadingAnimation(ContextCompat.getColor(this, R.color.colorAccent),
+                    BitmapFactory.decodeResource(getResources(), R.drawable.ic_done_white_48dp));
+        } else {
+            // Revert animation
+            signInBtn.revertAnimation();
+        }
     }
 
     @Override

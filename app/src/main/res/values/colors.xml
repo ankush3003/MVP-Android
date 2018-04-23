@@ -3,10 +3,8 @@
     <color name="colorPrimary">#212121</color>
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#FF3F80</color>
-    <color name="activityBg">#303030</color>
     <color name="viewBg">#424242</color>
     <color name="album_title">#4c4c4c</color>
-    <color name="logo_green">#87a252</color>
     <color name="logo_yellow">#ffee90</color>
     <color name="color_white">#FFFFFF</color>
 </resources>

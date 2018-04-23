@@ -28,7 +28,7 @@ public class LoginPresenterImpl implements ILoginPresenter, ILoginInteractor.ILo
     @Override
     public void onSuccess() {
         if(loginView != null) {
-            loginView.hideLoading();
+            loginView.hideLoading(true);
             loginView.loginSuccess();
         }
     }
@@ -36,7 +36,7 @@ public class LoginPresenterImpl implements ILoginPresenter, ILoginInteractor.ILo
     @Override
     public void onError(int errorCode) {
         if(loginView != null) {
-            loginView.hideLoading();
+            loginView.hideLoading(false);
 
             switch (errorCode) {
                 case ResultCode.EMPTY_USERNAME:
