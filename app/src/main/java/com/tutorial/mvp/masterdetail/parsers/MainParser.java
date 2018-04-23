@@ -29,7 +29,7 @@ import java.util.LinkedHashMap;
 public class MainParser {
 
     // returns result boolean
-    public ArrayList<CardData> getData (Context ctx) {
+    public static ArrayList<CardData> getData (Context ctx) {
         ArrayList<CardData> result = new ArrayList<>();
 
         try {
@@ -58,7 +58,7 @@ public class MainParser {
         return result;
     }
 
-    private String loadJSONFromAsset(Context context) {
+    private static String loadJSONFromAsset(Context context) {
         String json = null;
         try {
             InputStream is = ((Activity)context).getAssets().open(AppConstants.MASTER_DATA_FILENAME);
