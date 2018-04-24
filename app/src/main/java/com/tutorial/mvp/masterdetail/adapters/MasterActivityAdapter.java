@@ -2,7 +2,6 @@ package com.tutorial.mvp.masterdetail.adapters;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,23 +11,27 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.tutorial.mvp.masterdetail.R;
 import com.tutorial.mvp.masterdetail.constants.AppConstants;
-import com.tutorial.mvp.masterdetail.interfaces.RecyclerViewClickListener;
+import com.tutorial.mvp.masterdetail.master.IRecyclerViewClickListener;
 import com.tutorial.mvp.masterdetail.models.CardData;
 
 import java.util.List;
 
 /**
  * Created by ankush3003 on 1/6/2018.
+ *
+ * Adapter implementation for Master Activity. Uses Glide to view video thumbnails.
  */
 public class MasterActivityAdapter extends RecyclerView.Adapter<MasterActivityAdapter.MyViewHolder> {
 
     private Context mContext;
     private List<CardData> cardDataList;
-    private RecyclerViewClickListener recyclerViewClickListener;
 
-    public MasterActivityAdapter(Context mContext, RecyclerViewClickListener recyclerViewClickListener, List<CardData> cardDataList) {
+    // Click handler
+    private IRecyclerViewClickListener IRecyclerViewClickListener;
+
+    public MasterActivityAdapter(Context mContext, IRecyclerViewClickListener IRecyclerViewClickListener, List<CardData> cardDataList) {
         this.mContext = mContext;
-        this.recyclerViewClickListener = recyclerViewClickListener;
+        this.IRecyclerViewClickListener = IRecyclerViewClickListener;
         this.cardDataList = cardDataList;
     }
 
@@ -58,7 +61,7 @@ public class MasterActivityAdapter extends RecyclerView.Adapter<MasterActivityAd
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                recyclerViewClickListener.onViewClicked(view);
+                IRecyclerViewClickListener.onViewClicked(view);
             }
         });
     }

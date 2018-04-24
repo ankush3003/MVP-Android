@@ -25,24 +25,12 @@ public class CardData implements Parcelable{
         return cardTitle;
     }
 
-    public void setCardTitle(String cardTitle) {
-        this.cardTitle = cardTitle;
-    }
-
     public String getCardLink() {
         return cardLink;
     }
 
-    public void setCardLink(String cardLink) {
-        this.cardLink = cardLink;
-    }
-
     public String getCardDescription() {
         return cardDescription;
-    }
-
-    public void setCardDescription(String cardDescription) {
-        this.cardDescription = cardDescription;
     }
 
     @Override

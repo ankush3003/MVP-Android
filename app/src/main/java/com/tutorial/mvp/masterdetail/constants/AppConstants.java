@@ -5,6 +5,8 @@ import java.util.regex.Pattern;
 
 /**
  * Created by ankush3003 on 1/6/2018.
+ *
+ * App wide constants for json parsing and dummy credentials for now.
  */
 
 public class AppConstants {
@@ -24,11 +26,22 @@ public class AppConstants {
     public static final String CARD_HYPERLINK_KEY = "hyperlink";
     public static final String CARD_DESCRIPTION_KEY = "card_description";
 
-    // Extract youtube video thumbnail from video link
+    /**
+     * Extract youtube video thumbnail from video link
+     *
+     * @param ytVideoLink Target youtube video link
+     * @return video thumbnail link
+     */
     public static String getYoutubeThumbnailLink(String ytVideoLink) {
         return "http://img.youtube.com/vi/" + extractYoutubeID(ytVideoLink) + "/0.jpg";
     }
 
+    /**
+     * Extracts youtube video ID from link.
+     *
+     * @param ytUrl
+     * @return video ID
+     */
     private static String extractYoutubeID(String ytUrl) {
         String pattern = "(?<=watch\\?v=|/videos/|embed\\/)[^#\\&\\?]*";
 

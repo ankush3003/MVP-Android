@@ -1,4 +1,4 @@
-package com.tutorial.mvp.masterdetail.interfaces;
+package com.tutorial.mvp.masterdetail.master;
 
 import android.view.View;
 
@@ -6,7 +6,7 @@ import android.view.View;
  * Created by ankush3003 on 1/7/2018.
  */
 
-public interface RecyclerViewClickListener {
+public interface IRecyclerViewClickListener {
 
     void onViewClicked(View v);
 }

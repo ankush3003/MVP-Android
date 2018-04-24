@@ -1,8 +1,5 @@
-package com.tutorial.mvp.masterdetail.parsers;
+package com.tutorial.mvp.masterdetail.master;
 
-import android.app.Activity;
-import android.content.Context;
-import android.os.Environment;
 import android.text.TextUtils;
 
 import com.tutorial.mvp.masterdetail.constants.AppConstants;
@@ -12,32 +9,22 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.nio.MappedByteBuffer;
-import java.nio.channels.FileChannel;
-import java.nio.charset.Charset;
 import java.util.ArrayList;
-import java.util.LinkedHashMap;
 
 /**
- * Created by ankush3003 on 1/9/2018.
+ * Created by ankush3003 on 25/04/18.
  */
 
-public class MainParser {
+public class MasterInteractorImpl implements IMasterInteractor {
 
-    // returns result boolean
-    public static ArrayList<CardData> getData (Context ctx) {
+    @Override
+    public void parseData(String jsonString, IDataParsedListener dataParsedListener) {
         ArrayList<CardData> result = new ArrayList<>();
 
         try {
-            String jsonString = loadJSONFromAsset(ctx);
-
             if (jsonString == null || TextUtils.isEmpty(jsonString)) {
                 // file not found or IOException etc
-                return null;
+                dataParsedListener.onError();
             }
 
             JSONObject source = new JSONObject(jsonString);
@@ -53,25 +40,8 @@ public class MainParser {
             }
         } catch (JSONException e) {
             e.printStackTrace();
-            return null;
+            dataParsedListener.onError();
         }
-        return result;
+        dataParsedListener.onSuccess(result);
     }
-
-    private static String loadJSONFromAsset(Context context) {
-        String json = null;
-        try {
-            InputStream is = ((Activity)context).getAssets().open(AppConstants.MASTER_DATA_FILENAME);
-            int size = is.available();
-            byte[] buffer = new byte[size];
-            is.read(buffer);
-            is.close();
-            json = new String(buffer, "UTF-8");
-        } catch (IOException ex) {
-            ex.printStackTrace();
-            return null;
-        }
-        return json;
-    }
-
 }
