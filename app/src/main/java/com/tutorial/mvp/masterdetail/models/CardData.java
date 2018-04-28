@@ -7,6 +7,8 @@ import com.tutorial.mvp.masterdetail.constants.AppConstants;
 
 /**
  * Created by ankush3003 on 1/6/2018.
+ *
+ * Model to hold Card related data.
  */
 
 public class CardData implements Parcelable{

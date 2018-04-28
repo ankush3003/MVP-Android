@@ -9,6 +9,8 @@ import com.tutorial.mvp.masterdetail.constants.ResultCode;
 
 /**
  * Created by ankush3003 on 07/04/18.
+ *
+ * Interactor implementation as per mvp
  */
 
 public class LoginInteractorImpl implements ILoginInteractor {
@@ -28,6 +30,13 @@ public class LoginInteractorImpl implements ILoginInteractor {
         }
     }
 
+    /**
+     * validates credentials, Add validations as per requirement
+     *
+     * @param username entered username
+     * @param password entered password
+     * @return ResultCode post validation
+     */
     private int validateCredentials(String username, String password) {
         int result = ResultCode.VALID_CREDENTIALS;
 
@@ -44,6 +53,10 @@ public class LoginInteractorImpl implements ILoginInteractor {
         return result;
     }
 
+    /**
+     * Mock Login.
+     * TODO replace with real auth system when prepared.
+     */
     private class LoginTask extends AsyncTask<String[], Void, Boolean> {
         @Override
         protected Boolean doInBackground(String[]... strings) {

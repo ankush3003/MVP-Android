@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.os.Handler;
+import android.support.design.widget.Snackbar;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.inputmethod.InputMethodManager;
@@ -20,6 +20,7 @@ import butterknife.OnClick;
 
 /**
  * A login screen that offers login via username/password.
+ *
  */
 public class LoginActivity extends AppCompatActivity implements ILoginView{
 
@@ -50,6 +51,7 @@ public class LoginActivity extends AppCompatActivity implements ILoginView{
     protected void onDestroy() {
         super.onDestroy();
 
+        // Dispose loading button
         signInBtn.dispose();
     }
 
@@ -80,6 +82,7 @@ public class LoginActivity extends AppCompatActivity implements ILoginView{
 
     @Override
     public void showLoading() {
+        // animate using loading-button lib
         signInBtn.startAnimation();
     }
 
@@ -117,5 +120,6 @@ public class LoginActivity extends AppCompatActivity implements ILoginView{
 
     @Override
     public void loginFailed(int errorCode) {
+        Snackbar.make(findViewById(android.R.id.content), "Login failed!!", Snackbar.LENGTH_LONG).show();
     }
 }
