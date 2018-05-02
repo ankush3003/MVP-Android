@@ -8,4 +8,4 @@ In-progress
 4. MVP https://github.com/antoniolg/androidmvp
 
 ## Demo
-![App Demo](https://github.com/ankush3003/MVP-Android/blob/6cbc24ebe4991bf6a5a6d556126cfe81e5292b56/app/demo.gif)
+![App Demo](https://github.com/ankush3003/MVP-Android/blob/25e42901b771bda78f2a8f4f715ae1fd91d277e0/app/demo.gif)
