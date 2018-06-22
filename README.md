@@ -1,4 +1,7 @@
 # MVP-Android
+This project demonstrates usage of MVP pattern in Android using a simple Two page application.
+
+## Demo
 ![App Demo](https://github.com/ankush3003/MVP-Android/blob/25e42901b771bda78f2a8f4f715ae1fd91d277e0/app/demo.gif)
 
 ## OverView
